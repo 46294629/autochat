@@ -2,10 +2,6 @@ import openai
 import urllib3
 import json
 
-# openai.organization = "org-mi4nAQjBsG2HIOjMDnHcykg7" #personal
-# openai.api_key = os.getenv("OPENAI_API_KEY")
-# openai.Model.list()
-
 """
 curl https://api.openai.com/v1/completions \
 -H "Content-Type: application/json" \
