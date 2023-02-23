@@ -1,13 +1,18 @@
 autochat: an easy access to openai
 
-usage:
+What's for:
+Only need one chatgpt account, multiple people can access chatgpt through autochat website
+If you put the chatserver in an aborad cloud server, you don't need extra server to access chatgpt  
+
+Usage:
 1. install openai by pip: pip install openai
 2. install jdk by yum: yum install -y java-1.8.0-openjdk
-3. run chatserver: python3 main.py [-h "your chatserver host ip, default value is 172.17.0.5" -p "your chatserver port, default value is 9123"]
-4. modify file autoChat.js change {IP} to the chatserver ip, {PORT} to the chatserver port
-5. modify file tomcat/apache-tomcat-9.0.71/conf/server.xml, change the value of docBase to the directory of your autochat folder
-6. run tomcat: cd tomcat/apache-tomcat-9.0.71/ && ./bin/startup.sh
-7. Add protect.sh to crontab if needed
+3. modify file chatgpt.py, change {YOUR KEY} to your chatgpt api key
+4. run chatserver: python3 main.py [-h "your chatserver host ip, default value is 172.17.0.5" -p "your chatserver port, default value is 9123"]
+5. modify file autoChat.js change {IP} to the chatserver ip, {PORT} to the chatserver port
+6. modify file tomcat/apache-tomcat-9.0.71/conf/server.xml, change the value of docBase to the directory of your autochat folder
+7. run tomcat: cd tomcat/apache-tomcat-9.0.71/ && ./bin/startup.sh
+8. Add protect.sh to crontab if needed
 
-After running step 3, chatserver is already running. Your can send curl request to it. For example:  curl http://127.0.0.1:9123 -H "Content-Type: application/json" -d 'what is your name'
-After running step 6, you can access the autochat website and send request to chatserver through website
+After running step 4, chatserver is already running. Your can send curl request to it. For example:  curl http://127.0.0.1:9123 -H "Content-Type: application/json" -d 'what is your name'
+After running step 8, you can access the autochat website and send request to chatserver through website

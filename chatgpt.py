@@ -27,7 +27,7 @@ def chatgpt(prompt):
     try:
         r = http.request('POST','https://api.openai.com/v1/completions',
             body = encoded_data,
-            headers = {'Content-Type': 'application/json', 'Authorization': 'Bearer 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'})
+            headers = {'Content-Type': 'application/json', 'Authorization': '{YOUR KEY}'})
         res = json.loads(r.data)
         status = r.status
         if (status != 200):
