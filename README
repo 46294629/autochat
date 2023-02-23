@@ -1,0 +1,13 @@
+autochat: an easy access to openai
+
+usage:
+1. install openai by pip: pip install openai
+2. install jdk by yum: yum install -y java-1.8.0-openjdk
+3. run chatserver: python3 main.py [-h "your chatserver host ip, default value is 172.17.0.5" -p "your chatserver port, default value is 9123"]
+4. modify file autoChat.js change {IP} to the chatserver ip, {PORT} to the chatserver port
+5. modify file tomcat/apache-tomcat-9.0.71/conf/server.xml, change the value of docBase to the directory of your autochat folder
+6. run tomcat: cd tomcat/apache-tomcat-9.0.71/ && ./bin/startup.sh
+7. Add protect.sh to crontab if needed
+
+After running step 3, chatserver is already running. Your can send curl request to it. For example:  curl http://127.0.0.1:9123 -H "Content-Type: application/json" -d 'what is your name'
+After running step 6, you can access the autochat website and send request to chatserver through website

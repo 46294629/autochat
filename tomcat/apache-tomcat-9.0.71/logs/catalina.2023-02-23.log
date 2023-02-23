@@ -1,0 +1,36 @@
+23-Feb-2023 13:24:07.366 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Engine/Host] failed to set property [reloadable] to [true]
+23-Feb-2023 13:24:07.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.71
+23-Feb-2023 13:24:07.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 22:33:01 UTC
+23-Feb-2023 13:24:07.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.71.0
+23-Feb-2023 13:24:07.454 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+23-Feb-2023 13:24:07.455 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.10.76-linuxkit
+23-Feb-2023 13:24:07.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+23-Feb-2023 13:24:07.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.362.b08-3.el8.aarch64/jre
+23-Feb-2023 13:24:07.458 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_362-b08
+23-Feb-2023 13:24:07.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Red Hat, Inc.
+23-Feb-2023 13:24:07.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /data/openai/tomcat/apache-tomcat-9.0.71
+23-Feb-2023 13:24:07.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /data/openai/tomcat/apache-tomcat-9.0.71
+23-Feb-2023 13:24:07.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/data/openai/tomcat/apache-tomcat-9.0.71/conf/logging.properties
+23-Feb-2023 13:24:07.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+23-Feb-2023 13:24:07.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+23-Feb-2023 13:24:07.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+23-Feb-2023 13:24:07.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+23-Feb-2023 13:24:07.467 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+23-Feb-2023 13:24:07.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/data/openai/tomcat/apache-tomcat-9.0.71
+23-Feb-2023 13:24:07.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/data/openai/tomcat/apache-tomcat-9.0.71
+23-Feb-2023 13:24:07.470 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/data/openai/tomcat/apache-tomcat-9.0.71/temp
+23-Feb-2023 13:24:07.481 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib/aarch64:/lib:/usr/lib]
+23-Feb-2023 13:24:07.739 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+23-Feb-2023 13:24:07.760 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [648] milliseconds
+23-Feb-2023 13:24:07.819 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+23-Feb-2023 13:24:07.820 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.71]
+23-Feb-2023 13:24:08.339 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/data/openai/tomcat/apache-tomcat-9.0.71/webapps/docs]
+23-Feb-2023 13:24:08.424 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/data/openai/tomcat/apache-tomcat-9.0.71/webapps/docs] has finished in [85] ms
+23-Feb-2023 13:24:08.426 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/data/openai/tomcat/apache-tomcat-9.0.71/webapps/examples]
+23-Feb-2023 13:24:09.270 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/data/openai/tomcat/apache-tomcat-9.0.71/webapps/examples] has finished in [843] ms
+23-Feb-2023 13:24:09.273 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/data/openai/tomcat/apache-tomcat-9.0.71/webapps/host-manager]
+23-Feb-2023 13:24:09.367 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/data/openai/tomcat/apache-tomcat-9.0.71/webapps/host-manager] has finished in [94] ms
+23-Feb-2023 13:24:09.369 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/data/openai/tomcat/apache-tomcat-9.0.71/webapps/manager]
+23-Feb-2023 13:24:09.458 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/data/openai/tomcat/apache-tomcat-9.0.71/webapps/manager] has finished in [88] ms
+23-Feb-2023 13:24:09.467 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+23-Feb-2023 13:24:09.486 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1725] milliseconds

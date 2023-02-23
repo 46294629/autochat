@@ -1,0 +1,95 @@
+21-Feb-2023 12:45:05.749 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Engine/Host] failed to set property [reloadable] to [true]
+21-Feb-2023 12:45:05.837 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.71
+21-Feb-2023 12:45:05.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 9 2023 22:33:01 UTC
+21-Feb-2023 12:45:05.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.71.0
+21-Feb-2023 12:45:05.841 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+21-Feb-2023 12:45:05.842 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.10.76-linuxkit
+21-Feb-2023 12:45:05.843 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+21-Feb-2023 12:45:05.844 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.362.b08-3.el8.aarch64/jre
+21-Feb-2023 12:45:05.845 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_362-b08
+21-Feb-2023 12:45:05.846 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Red Hat, Inc.
+21-Feb-2023 12:45:05.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /data/openai/tomcat/apache-tomcat-9.0.71
+21-Feb-2023 12:45:05.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /data/openai/tomcat/apache-tomcat-9.0.71
+21-Feb-2023 12:45:05.850 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/data/openai/tomcat/apache-tomcat-9.0.71/conf/logging.properties
+21-Feb-2023 12:45:05.851 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Feb-2023 12:45:05.852 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+21-Feb-2023 12:45:05.853 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+21-Feb-2023 12:45:05.854 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+21-Feb-2023 12:45:05.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+21-Feb-2023 12:45:05.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/data/openai/tomcat/apache-tomcat-9.0.71
+21-Feb-2023 12:45:05.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/data/openai/tomcat/apache-tomcat-9.0.71
+21-Feb-2023 12:45:05.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/data/openai/tomcat/apache-tomcat-9.0.71/temp
+21-Feb-2023 12:45:05.867 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib/aarch64:/lib:/usr/lib]
+21-Feb-2023 12:45:06.140 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+21-Feb-2023 12:45:06.152 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-80]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1050)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1045)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.net.BindException: Address already in use
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Net.java:461)
+		at sun.nio.ch.Net.bind(Net.java:453)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:275)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:230)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:604)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:76)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1047)
+		... 13 more
+21-Feb-2023 12:45:06.154 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [674] milliseconds
+21-Feb-2023 12:45:06.213 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+21-Feb-2023 12:45:06.214 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.71]
+21-Feb-2023 12:45:06.713 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/data/openai/tomcat/apache-tomcat-9.0.71/webapps/docs]
+21-Feb-2023 12:45:06.795 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/data/openai/tomcat/apache-tomcat-9.0.71/webapps/docs] has finished in [81] ms
+21-Feb-2023 12:45:06.796 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/data/openai/tomcat/apache-tomcat-9.0.71/webapps/examples]
+21-Feb-2023 12:45:07.615 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+21-Feb-2023 12:45:07.617 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+21-Feb-2023 12:45:07.621 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@7c1e2a9e')
+21-Feb-2023 12:45:07.641 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/data/openai/tomcat/apache-tomcat-9.0.71/webapps/examples] has finished in [845] ms
+21-Feb-2023 12:45:07.642 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/data/openai/tomcat/apache-tomcat-9.0.71/webapps/host-manager]
+21-Feb-2023 12:45:07.727 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/data/openai/tomcat/apache-tomcat-9.0.71/webapps/host-manager] has finished in [85] ms
+21-Feb-2023 12:45:07.728 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/data/openai/tomcat/apache-tomcat-9.0.71/webapps/manager]
+21-Feb-2023 12:45:07.813 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/data/openai/tomcat/apache-tomcat-9.0.71/webapps/manager] has finished in [85] ms
+21-Feb-2023 12:45:07.823 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1667] milliseconds
+21-Feb-2023 12:45:07.825 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+		at java.net.ServerSocket.bind(ServerSocket.java:390)
+		at java.net.ServerSocket.<init>(ServerSocket.java:252)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:580)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+21-Feb-2023 12:45:07.827 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+21-Feb-2023 12:45:07.827 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+21-Feb-2023 12:45:07.836 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+21-Feb-2023 12:45:07.837 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+21-Feb-2023 12:45:07.845 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+21-Feb-2023 12:45:07.848 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+21-Feb-2023 12:45:11.855 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+21-Feb-2023 12:45:11.860 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+21-Feb-2023 12:45:11.868 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+21-Feb-2023 12:45:11.885 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+21-Feb-2023 12:45:11.886 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+21-Feb-2023 12:45:11.906 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+21-Feb-2023 12:45:11.911 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
