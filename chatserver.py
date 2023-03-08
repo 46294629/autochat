@@ -1,5 +1,6 @@
 from http.server import BaseHTTPRequestHandler
 from http.server import HTTPServer
+from socketserver import ThreadingMixIn
 import sys
 import json
 import chatgpt
@@ -46,9 +47,12 @@ class ChatServer(BaseHTTPRequestHandler):
         self.send_response(200)
         self._send_cors_headers()
         self.end_headers()
+        
+class ThreadingHTTPServer(ThreadingMixIn, HTTPServer):
+    pass
 
 def run(port, bind, 
-        server_class = HTTPServer,
+        server_class = ThreadingHTTPServer,
         handler_class = ChatServer):
 
     with server_class((bind, port), handler_class) as httpd:
@@ -60,4 +64,5 @@ def run(port, bind,
             httpd.serve_forever()
         except KeyboardInterrupt:
             print("\nKeyboard interrupt received, exiting.")
+            httpd.server_close()
             sys.exit(0)
